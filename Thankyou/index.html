@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="fontawesome/css/brands.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+</head>
+<body>
+  <div class="containermain">
+    <div class="container-sm container1">
+      <div class="container-sm logocont"><img src="images/logo trans.png" class="logocont1" alt="bangkero logo"><img src="bangkero/text.png" class="logotext" alt="bangkero logo"></div>
+    </div>
+    <div class="container-sm container2"> 
+      <div class="thanksreg"><h2 class="thanksreg1">Thanks for Booking!</h2>
+        <div class="thankslog"><p>July 23, 2023 is now booked! Contact Mario Go for further pickup instructions</p></div>
+        <div>
+          <a href="http://www.portfolio.com.test/mp1/home/"><button type="submit" class="btn loginbut zoom">Back to Home</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- Pop up window -->
+    <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h4>Please Log in</h4>
+          <label for="email">
+            <strong>E-mail</strong>
+          </label>
+          <input type="text" id="email" placeholder="Your Email" name="email" required>
+          <label for="psw">
+            <strong>Password</strong>
+          </label>
+          <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+          <button type="submit" class="btn">Log in</button>
+          <div class="popbr"></div><br>
+          <p>No Account Yet?</p>
+          <br>
+          <p><a href="http://www.portfolio.com.test/mp1/Reg">Create New Account</a></p>
+          
+        </form>
+      </div>
+    </div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn btn cancel" onclick="closeNav(), closeForm()">&times;</a>
+      <div class="overlay-content">
+      </div>
+    </div> 
+    
+    <script>
+      function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+      
+    </script>  
+      <!-- Pop up window -->
+    
+    <div class="container-sm container4">
+      <div class="container-sm address1"><p class="addressline"><a href="#" class="add1">Suite 71, Clover Tower
+        Lacson St. Bacolod City
+        Neg. Occ. Philippines 6100</a></p></div>
+      <div class="container-sm address2"><h5 class="follow">Follow Us</h5>
+        <div class="container-sm socialcont">
+          <img src="bangkero/YTround.png" class="socialcont1" alt="youtube channel link">
+          <img src="bangkero/FB round.png" class="socialcont2" alt="facebook account">
+          <img src="bangkero/IGround.png" class="socialcont1" alt="instagram account">
+        </div>
+        <p class="cpr">Copyright© 2023, Ralph Ryan Ugahayon, All Rights Reserved</p>
+      </div>
+      <div class="container-sm address3">
+        <form action="/action_page.php">
+        <div class="contnews">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label style="color: aliceblue;">
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      
+        <div class="contnews">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+      </div>
+    <div>
+  
+  </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="fontawesome/css/brands.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+</head>
+<body>
+  <div class="containermain">
+    <div class="container-sm container1">
+      <div class="container-sm logocont"><img src="images/logo trans.png" class="logocont1" alt="bangkero logo"><img src="bangkero/text.png" class="logotext" alt="bangkero logo"></div>
+      <div class="container-sm navcont">
+        <nav class="container-sm navbut zoom"><a href="http://www.portfolio.com.test/mp1/home" class="hover-underline-animation ">Home</a></nav>
+        <nav class="container-sm navbutB zoom1"><a href="http://www.portfolio.com.test/mp1/brag/" class="hover-underline-animation ">Bragboard</a></nav>
+        <nav class="container-sm navbut zoom"><a href="http://www.portfolio.com.test/mp1/location/" class="hover-underline-animation ">Boatman</a></nav>
+        <nav class="container-sm navbut zoom"><a href="http://www.portfolio.com.test/mp1/blog/" class="hover-underline-animation ">Blogs</a></nav>
+      </div>
+      <div class="container-sm login">
+        <button class="btn1"><a href="http://www.portfolio.com.test/mp1/profile/"><i class="fa-solid fa-bell"></i></a></button>
+        <div class="logbut"><img src="images/tejz.png" alt="" class="profpic"></div>
+        <div class="weluser">Welcome Bong</div>
+      </div>
+     <!-- Pop up window -->
+      <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="/action_page.php" class="formContainer">
+            <h4>Please Log in</h4>
+            <label for="email">
+              <strong>E-mail</strong>
+            </label>
+            <input type="text" id="email" placeholder="Your Email" name="email" required>
+            <label for="psw">
+              <strong>Password</strong>
+            </label>
+            <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+            <button type="submit" class="btn">Log in</button>
+            <div class="popbr"></div><br>
+            <p>No Account Yet?</p>
+            <br>
+            <p><a href="http://www.portfolio.com.test/mp1/Reg">Create New Account</a></p>
+            
+          </form>
+        </div>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn btn cancel" onclick="closeNav(), closeForm()">&times;</a>
+        <div class="overlay-content">
+        </div>
+      </div> 
+      
+      <script>
+        function openForm() {
+          document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("popupForm").style.display = "none";
+        }
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+         tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        
+        
+      </script>  
+        <!-- Pop up window -->
+    </div>
+    <div class="container-sm container2"> 
+      <div class="container-sm head1">
+        <div class="profilepic1"><img src="images/rey tayag.png" class="rounded mx-auto d-block profilepic" alt="..."></div>
+        <div class="namedetails"><h2 class="nameh2">Rey Tayag</h2><p><i class="fa-solid fa-location-dot colorloc"></i> Cogeo Village, Antipolo City, Rizal</p></div>
+        <div>
+          <ul>
+            <li><strong>Club:</strong> None</li>
+            <li><strong>Account:</strong> Angler</li>
+            <li><strong>Date of Birth:</strong> 04-23-1989</li>
+            <li><strong>Fishing Grounds:</strong> Batangas, Subic, Navotas</li>
+            <li><strong>Email:</strong> R.tayag@gmail.com</li>
+            <li><strong>Phone:</strong> +63 927 119 1417</li>
+            <li><strong>Recent Booking:</strong> May 6, 2023</li>
+          </ul>
+          <div class="tab tabmar">
+            <button class="tablinks" onclick="openCity(event, 'London')">Send Message</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Feedbacks</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Friends List</button>
+          </div>
+          
+          <div id="London" class="tabcontent">
+            <h3>To: Rey Tayag</h3>
+            <form>
+              <textarea></textarea>
+            </form>
+            <a href="#">Send</a>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <a href="http://www.portfolio.com.test/mp1/boatman/"><p>Mario Go</p></a>
+            <p>Thanks sa pab book sir, On time at may pa tip pa. Maraming salamat</p> 
+            <a href="#"><p>Tejz Lim</p></a>
+            <p>Maraming salamat boss, Fish on!</p> 
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <a href="http://www.portfolio.com.test/mp1/boatman/"><p>Mario Go</p></a>
+            <a href="#"><p>Bong Tan</p></a>
+            <a href="#"><p>Tejz</p></a>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+ 
+    <div class="container-sm container4">
+      <div class="container-sm address1"><p class="addressline"><a href="#" class="add1">Suite 71, Clover Tower
+        Lacson St. Bacolod City
+        Neg. Occ. Philippines 6100</a></p></div>
+      <div class="container-sm address2"><h5 class="follow">Follow Us</h5>
+        <div class="container-sm socialcont">
+          <img src="bangkero/YTround.png" class="socialcont1" alt="youtube channel link">
+          <img src="bangkero/FB round.png" class="socialcont2" alt="facebook account">
+          <img src="bangkero/IGround.png" class="socialcont1" alt="instagram account">
+        </div>
+        <p class="cpr">Copyright© 2023, Ralph Ryan Ugahayon, All Rights Reserved</p>
+      </div>
+      <div class="container-sm address3">
+        <form action="/action_page.php">
+        <div class="contnews">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label style="color: aliceblue;">
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      
+        <div class="contnews">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+      </div>
+    <div>
+  
+  </div>
+  
+</body>
+
+</html>
